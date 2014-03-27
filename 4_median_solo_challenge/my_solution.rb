@@ -36,9 +36,9 @@ def median(array)
 	if array.length % 2 != 0 
 		array[(array.length / 2)]
 	else
-		m1 = ((array.length / 2) - 1) 
-		m2 = (array.length / 2)
-		(array[m1] + array[m2]) / 2.0
+		mid_left = ((array.length / 2) - 1)
+		mid_right = (array.length / 2)
+		(array[mid_left] + array[mid_right]) / 2.0
 	end
 end
 
