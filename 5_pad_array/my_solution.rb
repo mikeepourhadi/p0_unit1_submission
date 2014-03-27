@@ -43,11 +43,11 @@
 # 2. Initial Solution
 class Array
 	def pad(min_length, pad = nil)
-		arr = self.clone
-		while arr.length < min_length
-			arr << pad
+		dup = self.clone
+		while dup.length < min_length
+			dup << pad
 		end
-		arr
+		dup
 	end
 
 	def pad!(min_length, pad = nil)
