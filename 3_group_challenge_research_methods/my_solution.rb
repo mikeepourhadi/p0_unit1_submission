@@ -20,16 +20,16 @@ end
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
-    dup = [];
+    updated_array = [];
 	source.each do |x| 
 		if x.is_a? Integer 
 			x += thing_to_modify
-			dup << x
+			updated_array << x
 		else
-		    dup << x
+		    updated_array << x
 		end
 	end
-    dup
+    updated_array
 end
 
 
