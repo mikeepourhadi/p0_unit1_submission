@@ -20,6 +20,19 @@ end
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
+    dup = [];
+	source.each do |x| 
+		if x.is_a? Integer 
+			x += thing_to_modify
+			dup << x
+		else
+		    dup << x
+		end
+	end
+    dup
+end
+
+
   # Your code here!
 end
 
@@ -28,8 +41,8 @@ def my_hash_modification_method(source, thing_to_modify)
 end
 
 # Identify and describe the ruby method you implemented. 
-# 
-#
+# Unfortunately, I can't find out how to manipulate the original object (be it hash or array). I tried replace, delete, index.at,
+# and I just couldn't get it to work. Instead, I used each and just made a new array or object. I feel like this is completely incorrect.
 #
 
 
