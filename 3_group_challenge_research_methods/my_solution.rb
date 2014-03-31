@@ -32,16 +32,14 @@ def my_array_modification_method(source, thing_to_modify)
     updated_array
 end
 
-
-  # Your code here!
-end
-
 def my_hash_modification_method(source, thing_to_modify)
-  # Your code here!
+	source.each do |name, age| 
+		source[name] = age += thing_to_modify
+	end
 end
 
 # Identify and describe the ruby method you implemented. 
-# Unfortunately, I can't find out how to manipulate the original object (be it hash or array). I tried replace, delete, index.at,
+# Unfortunately, I can't find out how to manipulate the original object (for the array only, actually). I tried replace, delete, index.at,
 # and I just couldn't get it to work. Instead, I used each and just made a new array or object. I feel like this is completely incorrect.
 #
 
