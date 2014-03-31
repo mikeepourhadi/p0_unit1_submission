@@ -40,7 +40,8 @@ end
 
 # Identify and describe the ruby method you implemented. 
 # Unfortunately, I can't find out how to manipulate the original object (for the array only, actually). I tried replace, delete, index.at,
-# and I just couldn't get it to work. Instead, I used each and just made a new array or object. I feel like this is completely incorrect.
+# and I just couldn't get it to work. Instead, I used each and just made a new array or object. I feel like this is completely incorrect, 
+# and I will seek the group's insight.
 #
 
 
@@ -90,7 +91,13 @@ p my_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 
 
 # Reflect!
 # 
-# 
-# 
+# This was very tough for me. I thought I had looping down, but I cannot figure out how to make a destructive method
+# using .each. Perhaps there is a method that I am missing.
+#
+# Unfortunately, I didn't find out a solution to this, so I find it difficult to identify something that I learned. Also,
+# my group did not have time to convene to combine all of our work together. At least, if we did, I didn't know!
+#
+# I am not entirely confident with this objective. It was tough for me, and unfortunately I did not give myself enough time to work
+# through it. I hope that I can figure it out in the future and I will continue to work with it.
 # 
 # 
