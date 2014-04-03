@@ -32,9 +32,10 @@ def my_array_modification_method(source, thing_to_modify)
 end
 
 def my_hash_modification_method(source, thing_to_modify)
-	source.each do |name, age| 
+	source.map do |name, age|
 		source[name] = age += thing_to_modify
 	end
+    source
 end
 
 # Identify and describe the ruby method you implemented. 
