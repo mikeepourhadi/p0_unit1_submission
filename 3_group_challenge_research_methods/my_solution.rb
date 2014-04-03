@@ -21,15 +21,14 @@ end
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
     updated_array = [];
-	source.each do |x| 
+	source.map! do |x|
 		if x.is_a? Integer 
 			x += thing_to_modify
-			updated_array << x
-		else
-		    updated_array << x
+        else
+            x
 		end
 	end
-    updated_array
+    source
 end
 
 def my_hash_modification_method(source, thing_to_modify)
